@@ -4,6 +4,6 @@ $slick_header.slick({
     arrows: false,
     dots: true,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 5000,
     infinite: true
 });
