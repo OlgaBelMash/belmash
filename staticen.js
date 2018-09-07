@@ -1,6 +1,4 @@
 $("#footer").append("<div class=\"links flex-center\">© BELMASH 2018 All rights reserved</div>")
-
-
 var $topSliderChecker = setInterval(
     function(){
         var $slick_header_top = $('.slider-header');
@@ -17,3 +15,20 @@ var $topSliderChecker = setInterval(
 		}
     },
 100);
+$(window).ready(function () {
+	if(!localStorage.getItem('cookieAccepted')){
+		var cookieHTML="<div id='cookieNotification' style='font-size: 13px;background: #002c7e;width: 100%;height: 30px;position: fixed;bottom: 0px;z-index: 9999;color: #fee;padding-left: 15px;'>"+
+		  "<p style='display: inline-block;'>Website belmash.by uses cookies to ensure that we give you the best user experiences. "+
+		  "By using this site you agree to the use of cookies for analytics and personalized content."+
+		  "<a href='/informacija/cookie/nasha-politika-faylov-cookie/' target='_blank' style='line-height: 30px;color: #c81717;'>&nbsp;More...</a></p>"+
+		  "<button id='cookieButton' style='background: none;border: none;float: right;	margin-right: 15px;'>"+
+		  "	<span style='font-size: 25px;line-height: 30px;'>×</span>"+
+		  "</button>"+
+		"</div>"
+		$("#footer").append(cookieHTML);
+	}
+});
+$(document).on('click','#cookieButton', function(){
+	localStorage.setItem('cookieAccepted', 1);
+	$('#cookieNotification').remove();
+});
