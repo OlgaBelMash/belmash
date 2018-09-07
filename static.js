@@ -27,7 +27,7 @@ $(window).ready(function () {
 		"</div>"
 		$("#footer").append(cookieHTML);
 	}
-}
+});
 $(document).on('click','#cookieButton', function(){
 	localStorage.setItem('cookieAccepted', 1);
 	$('#cookieNotification').remove();
