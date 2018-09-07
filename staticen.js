@@ -1,4 +1,4 @@
-$("#footer").append("<div class=\"links flex-center\">© BELMASH 2018 All rights reserved</div>")
+$("#footer").append("<div class=\"links flex-center\">All rights reserved BELMASH 2018 ©</div>")
 var $topSliderChecker = setInterval(
     function(){
         var $slick_header_top = $('.slider-header');
