@@ -4,7 +4,7 @@ $("#footer").append("<div class=\"links flex-center\">Все права защи
 var $topSliderChecker = setInterval(
     function(){
         var $slick_header_top = $('.slider-header');
-        if($slick_header_top.unslick){
+        if($slick_header_top.hasClass('slick-initialized')){
             $slick_header_top.unslick();
             $slick_header_top.slick({
                 arrows: false,
@@ -16,5 +16,5 @@ var $topSliderChecker = setInterval(
 			clearInterval ($topSliderChecker);
 		}
     },
-5000);
+100);
 
