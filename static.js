@@ -18,7 +18,7 @@ var $topSliderChecker = setInterval(
 $(window).ready(function () {
 	if(!localStorage.getItem('cookieAccepted')){
 		var cookieHTML="<div id='cookieNotification' style='font-size: 13px;background: #002c7e;width: 100%;height: 30px;position: fixed;bottom: 0px;z-index: 9999;color: #fee;padding-left: 15px;'>"+
-		  "<div style='display: inline-block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;max-width: 97%;'>Сайт belmash.by использует файлы cookies и сервисы сбора технических данных посетителей (данные об IP-адресе, местоположении и др.) для более удобной и быстрой работы. "+
+		  "<div style='display: inline-block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;max-width: 97%;padding-right: 25px;'>Сайт belmash.by использует файлы cookies и сервисы сбора технических данных посетителей (данные об IP-адресе, местоположении и др.) для более удобной и быстрой работы. "+
 		  "Продолжая посещение нашего сайта, вы автоматически соглашаетесь на использование cookies."+
 		  "<a href='/informacija/cookie/nasha-politika-faylov-cookie/' target='_blank' style='line-height: 30px;color: #c81717;'>&nbsp;Подробнее...</a></div>"+
 		  "<button id='cookieButton' style='background: none;border: none;float: right;	right: 10px;position: absolute;'>"+
