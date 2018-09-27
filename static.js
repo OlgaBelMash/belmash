@@ -21,7 +21,7 @@ $(window).ready(function () {
 		  "<div style='display: inline-block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;max-width: 97%;'>Сайт belmash.by использует файлы cookies и сервисы сбора технических данных посетителей (данные об IP-адресе, местоположении и др.) для более удобной и быстрой работы. "+
 		  "Продолжая посещение нашего сайта, вы автоматически соглашаетесь на использование cookies."+
 		  "<a href='/informacija/cookie/nasha-politika-faylov-cookie/' target='_blank' style='line-height: 30px;color: #c81717;'>&nbsp;Подробнее...</a></div>"+
-		  "<button id='cookieButton' style='background: none;border: none;float: right;	margin-right: 15px;position: absolute;'>"+
+		  "<button id='cookieButton' style='background: none;border: none;float: right;	right: 10px;position: absolute;'>"+
 		  "	<span style='font-size: 25px;line-height: 30px;'>×</span>"+
 		  "</button>"+
 		"</div>"
