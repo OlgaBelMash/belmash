@@ -11,9 +11,9 @@ var $topSliderChecker = setInterval(
                 autoplaySpeed: 5000,
                 infinite: true
             	});
-		$(".slick-dots li button").each(function() {
-			$(this).children().css("font-size","18px !important");
-			$(this).children().css("text-shadow","-2px 0 #002c7e, 0 2px #002c7e, 2px 0 #002c7e, 0 -2px #002c7e");
+		$('head').append("<style>.slick-dots-override button::before{font-size:18px !important;text-shadow:-2px 0 #002c7e, 0 2px #002c7e, 2px 0 #002c7e, 0 -2px #002c7e; }</style>");
+		$(".slick-dots li").each(function() {
+			$(this).addClass("slick-dots-override");
 		});
 		clearInterval ($topSliderChecker);
 	}
