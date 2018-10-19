@@ -1,4 +1,4 @@
-$("slick-dots li button").each(function() {
+$(".slick-dots li button").each(function() {
 	this.firstChild.css("font-size","18px !important");
 	this.firstChild.css("text-shadow","-2px 0 #002c7e, 0 2px #002c7e, 2px 0 #002c7e, 0 -2px #002c7e");
 });
