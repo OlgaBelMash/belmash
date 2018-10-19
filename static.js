@@ -1,3 +1,5 @@
+$('<style>.slick-dots li button::before{font-size:18px !important;text-shadow:"-2px 0 #002c7e, 0 2px #002c7e, 2px 0 #002c7e, 0 -2px #002c7e;"}</style>').appendTo('head');
+
 $("#footer").append("<div style=\"padding-bottom:35px;\" class=\"links flex-center\">Все права защищены СООО Завод Белмаш 2018 ©</div>")
 var $topSliderChecker = setInterval(
     function(){
@@ -32,3 +34,4 @@ $(document).on('click','#cookieButton', function(){
 	localStorage.setItem('cookieAccepted', 1);
 	$('#cookieNotification').remove();
 });
+
