@@ -10,9 +10,13 @@ var $topSliderChecker = setInterval(
                 autoplay: true,
                 autoplaySpeed: 5000,
                 infinite: true
-            });
-			clearInterval ($topSliderChecker);
-		}
+            	});
+		$(".slick-dots li button").each(function() {
+			$(this).children().css("font-size","18px !important");
+			$(this).children().css("text-shadow","-2px 0 #002c7e, 0 2px #002c7e, 2px 0 #002c7e, 0 -2px #002c7e");
+		});
+		clearInterval ($topSliderChecker);
+	}
     },
 100);
 $(window).ready(function () {
@@ -27,10 +31,6 @@ $(window).ready(function () {
 		"</div>"
 		$("#footer").append(cookieHTML);
 	}
-	$(".slick-dots li button").each(function() {
-		$(this).children().css("font-size","18px !important");
-		$(this).children().css("text-shadow","-2px 0 #002c7e, 0 2px #002c7e, 2px 0 #002c7e, 0 -2px #002c7e");
-	});
 });
 $(document).on('click','#cookieButton', function(){
 	localStorage.setItem('cookieAccepted', 1);
