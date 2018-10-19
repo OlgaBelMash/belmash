@@ -1,5 +1,7 @@
-$('<style>.slick-dots li button::before{font-size:18px !important;text-shadow:"-2px 0 #002c7e, 0 2px #002c7e, 2px 0 #002c7e, 0 -2px #002c7e;"}</style>').appendTo('head');
-
+$("slick-dots li button").each(function() {
+	this.firstChild.css("font-size","18px !important");
+	this.firstChild.css("text-shadow","-2px 0 #002c7e, 0 2px #002c7e, 2px 0 #002c7e, 0 -2px #002c7e");
+});
 $("#footer").append("<div style=\"padding-bottom:35px;\" class=\"links flex-center\">Все права защищены СООО Завод Белмаш 2018 ©</div>")
 var $topSliderChecker = setInterval(
     function(){
