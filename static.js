@@ -37,3 +37,4 @@ $(document).on('click','#cookieButton', function(){
 	$('#cookieNotification').remove();
 });
 
+$(".tip-caption").css('text-align', 'left');
