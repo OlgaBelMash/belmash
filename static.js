@@ -1,4 +1,4 @@
-$("#footer").append("<div style=\"padding-bottom:35px;\" class=\"links flex-center\">Все права защищены СООО Завод Белмаш 2018 ©</div>")
+$("#footer").append("<div style=\"padding-bottom:35px;\" class=\"links flex-center\">Все права защищены СООО Завод Белмаш 2018-2019 ©</div>")
 var $topSliderChecker = setInterval(
     function(){
         var $slick_header_top = $('.slider-header');
