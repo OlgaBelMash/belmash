@@ -38,3 +38,10 @@ $(document).on('click','#cookieButton', function(){
 });
 
 $(".tip-caption").css('text-align', 'left').css('min-width', '150px');
+
+$("#yw0 .col-sm-12").each(function() {
+	$(this).removeClass("col-lg-6");
+	$(this).addClass("col-lg-12");
+	$(this).removeClass("col-md-6");
+	$(this).addClass("col-md-12");
+});
