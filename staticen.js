@@ -1,4 +1,4 @@
-$("#footer").append("<div style=\"padding-bottom:35px;\" class=\"links flex-center\">All rights reserved BELMASH 2018 ©</div>")
+$("#footer").append("<div style=\"padding-bottom:35px;\" class=\"links flex-center\">All rights reserved BELMASH 2019 ©</div>")
 var $topSliderChecker = setInterval(
     function(){
         var $slick_header_top = $('.slider-header');
@@ -10,9 +10,13 @@ var $topSliderChecker = setInterval(
                 autoplay: true,
                 autoplaySpeed: 5000,
                 infinite: true
-            });
-			clearInterval ($topSliderChecker);
-		}
+            	});
+		$('head').append("<style>.slick-dots-override button::before{font-size:14px !important;text-shadow:-2px 0 #002c7e, 0 2px #002c7e, 2px 0 #002c7e, 0 -2px #002c7e; }</style>");
+		$(".slick-dots li").each(function() {
+			$(this).addClass("slick-dots-override");
+		});
+		clearInterval ($topSliderChecker);
+	}
     },
 100);
 $(window).ready(function () {
