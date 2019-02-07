@@ -44,4 +44,7 @@ $("#yw0 .col-sm-12").each(function() {
 	$(this).addClass("col-lg-12");
 	$(this).removeClass("col-md-6");
 	$(this).addClass("col-md-12");
+	$("#yw0 .col-sm-12").each(function() {
+  	$(this).prepend("<span style='color:#1a498c;' class='glyphicon glyphicon-question-sign'></span>");
+});
 });
