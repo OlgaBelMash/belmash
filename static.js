@@ -49,7 +49,7 @@ $("#yw0 .col-sm-12").each(function() {
 
 var $delay=500;
 var $hoverChecker;
-$('#yw0 .item').mouseenter(function(){
+$(document).on('mouseenter','#yw0 .item', function(){
 	let $el=$(this);
 	console.log("!");
 	$hoverChecker = setTimeout(function() {
