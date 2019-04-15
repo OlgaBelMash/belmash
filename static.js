@@ -59,3 +59,9 @@ $(document).on('mouseenter','#yw0 .item', function(){
 		}, $delay);
 	}
 });
+$(document).on('click','#yw0 .item', function(){
+	if($hoverChecker){
+		clearTimeout($hoverChecker);
+		$hoverChecker=false;
+	}
+});
