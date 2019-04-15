@@ -48,13 +48,12 @@ $("#yw0 .col-sm-12").each(function() {
 });
 
 var $delay=500;
-$('#yw0 .item').each(function(){
-	var $hoverChecker;
-	$(this).mouseover(function(){
-		let $el=$(this)
-		$hoverChecker = setTimeout(function() {
-			console.log($el.attr('id'));
-			clearTimeout($hoverChecker);
-		}, $delay);
-	});
+var $hoverChecker;
+$('#yw0 .item').mouseover(function(){
+	let $el=$(this);
+	console.log("!");
+	$hoverChecker = setTimeout(function() {
+		console.log($el.attr('id'));
+		clearTimeout($hoverChecker);
+	}, $delay);
 });
