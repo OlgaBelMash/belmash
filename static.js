@@ -56,6 +56,6 @@ $('#yw0').ready(function() {
 		});
 	});
 });
-$(document).on('click','.dropdown-parent', function(){
+$(document).on('mouseover','.dropdown-parent', function(){
 	console.log("CLICK!");
 });
