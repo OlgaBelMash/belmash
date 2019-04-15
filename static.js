@@ -52,7 +52,7 @@ var $hoverChecker;
 $(document).on('mouseenter','#yw0 .item', function(){
 	let $el=$(this);
 	$hoverChecker = setTimeout(function() {
-		console.log($el.attr('data-id'));
 		clearTimeout($hoverChecker);
+		$el.click();
 	}, $delay);
 });
