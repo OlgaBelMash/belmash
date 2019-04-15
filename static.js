@@ -48,11 +48,13 @@ $("#yw0 .col-sm-12").each(function() {
 });
 
 var $delay=500;
-$('#yw0 .item').on('mouseover', function(){
+$('#yw0 .item').each(function(){
 	var $hoverChecker;
-	let $el=$(this)
-	$hoverChecker = setTimeout(function() {
-		console.log($el.attr('id'));
-		clearTimeout($hoverChecker);
-	}, $delay);
+	$(this).mouseover(function(){
+		let $el=$(this)
+		$hoverChecker = setTimeout(function() {
+			console.log($el.attr('id'));
+			clearTimeout($hoverChecker);
+		}, $delay);
+	});
 });
