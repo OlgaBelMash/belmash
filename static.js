@@ -48,7 +48,7 @@ $("#yw0 .col-sm-12").each(function() {
 });
 
 var delay=500, setTimeoutConst;
-$('#yw0 li').on('hover', function() {
+$('#yw0 .item').on('hover', function() {
   setTimeoutConst = setTimeout(function() {
       console.log("FOCUS!")  
   }, delay);
