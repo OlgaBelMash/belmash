@@ -50,7 +50,7 @@ $("#yw0 .col-sm-12").each(function() {
 var $delay=500;
 $('#yw0 .item').each(function() {
 	var $hoverChecker;
-	$(this).on('hover', function() {
+	$(this).hover( function() {
 		$hoverChecker = setTimeout(function() {
 			console.log("FOCUS!");
 			clearTimeout($hoverChecker);
