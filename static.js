@@ -48,10 +48,12 @@ $("#yw0 .col-sm-12").each(function() {
 });
 
 var delay=500, setTimeoutConst;
-$('#yw0 .item').on('hover', function() {
-  setTimeoutConst = setTimeout(function() {
-      console.log("FOCUS!")  
-  }, delay);
-}, function() {
-  clearTimeout(setTimeoutConst);
+$('#yw0 .item').each(function() {
+	$(this).on('hover', function() {
+		setTimeoutConst = setTimeout(function() {
+		console.log("FOCUS!")  
+		}, delay);
+	}, function() {
+		clearTimeout(setTimeoutConst);
+	});
 });
