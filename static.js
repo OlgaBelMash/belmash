@@ -56,3 +56,6 @@ $('#yw0').ready(function() {
 		});
 	});
 });
+$(document).on('hover','#yw0 .item', function(){
+	console.log("CLICK!");
+});
