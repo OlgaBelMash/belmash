@@ -48,10 +48,10 @@ $("#yw0 .col-sm-12").each(function() {
 });
 
 var $delay=500;
-$(document).on('mouseover','#yw0 .item', function(){
+$('#yw0 .item').on('mouseover', function(){
 	var $hoverChecker;
 	$(this).hover( function() {
-		var $el=$(this)
+		let $el=$(this)
 		$hoverChecker = setTimeout(function() {
 			console.log($el.attr('id'));
 			clearTimeout($hoverChecker);
