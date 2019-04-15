@@ -52,7 +52,7 @@ $(document).on('mouseover','#yw0 .item', function(){
 	var $hoverChecker;
 	$(this).hover( function() {
 		$hoverChecker = setTimeout(function() {
-			console.log("FOCUS!");
+			console.log($(this).attr('id'));
 			clearTimeout($hoverChecker);
 		}, $delay);
 	});
