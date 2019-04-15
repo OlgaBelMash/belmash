@@ -48,7 +48,7 @@ $("#yw0 .col-sm-12").each(function() {
 });
 
 var $delay=500;
-$('#yw0').change(function() {
+$('#yw0').resize(function() {
 	$('#yw0 .item').each(function() {	
 		var $hoverChecker;
 		$(this).hover( function() {
