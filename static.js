@@ -50,11 +50,9 @@ $("#yw0 .col-sm-12").each(function() {
 var $delay=500;
 $('#yw0 .item').on('mouseover', function(){
 	var $hoverChecker;
-	$(this).hover( function() {
-		let $el=$(this)
-		$hoverChecker = setTimeout(function() {
-			console.log($el.attr('id'));
-			clearTimeout($hoverChecker);
-		}, $delay);
-	});
+	let $el=$(this)
+	$hoverChecker = setTimeout(function() {
+		console.log($el.attr('id'));
+		clearTimeout($hoverChecker);
+	}, $delay);
 });
