@@ -51,7 +51,6 @@ var $delay=500;
 var $hoverChecker;
 $(document).on('mouseenter','#yw0 .item', function(){
 	let $el=$(this);
-	console.log("!");
 	$hoverChecker = setTimeout(function() {
 		console.log($el.attr('id'));
 		clearTimeout($hoverChecker);
