@@ -47,13 +47,13 @@ $("#yw0 .col-sm-12").each(function() {
 	$(this).prepend("<span style='color:#1a498c;' class='glyphicon glyphicon-question-sign'></span>");
 });
 
-var delay=500, setTimeoutConst;
+var $delay=500;
 $('#yw0 .item').each(function() {
-	$(this).on('mouseover', function() {
-		setTimeoutConst = setTimeout(function() {
-		console.log("FOCUS!")  
-		}, delay);
-	}, function() {
-		clearTimeout(setTimeoutConst);
+	var $hoverChecker;
+	$(this).on('hover', function() {
+		$hoverChecker = setTimeout(function() {
+			console.log("FOCUS!");
+			clearTimeout($hoverChecker);
+		}, $delay);
 	});
 });
