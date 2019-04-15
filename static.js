@@ -46,3 +46,12 @@ $("#yw0 .col-sm-12").each(function() {
 	$(this).addClass("col-md-12");
 	$(this).prepend("<span style='color:#1a498c;' class='glyphicon glyphicon-question-sign'></span>");
 });
+
+var delay=500, setTimeoutConst;
+$('#yw0 li').on('hover', function() {
+  setTimeoutConst = setTimeout(function() {
+      console.log("FOCUS!")  
+  }, delay);
+}, function() {
+  clearTimeout(setTimeoutConst);
+});
