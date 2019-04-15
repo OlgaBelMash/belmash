@@ -50,9 +50,12 @@ $("#yw0 .col-sm-12").each(function() {
 var $delay=1000;
 var $hoverChecker;
 $(document).on('mouseenter','#yw0 .item', function(){
-	let $el=$(this);
-	$hoverChecker = setTimeout(function() {
-		clearTimeout($hoverChecker);
-		$el.click();
-	}, $delay);
+	if(!$hoverChecker){
+		let $el=$(this);
+		$hoverChecker = setTimeout(function() {
+			clearTimeout($hoverChecker);
+			$hoverChecker=false;
+			$el.click();
+		}, $delay);
+	}
 });
