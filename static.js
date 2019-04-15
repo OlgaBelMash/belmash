@@ -51,8 +51,8 @@ var $delay=500;
 $('#yw0').ready(function() {
 	$('#yw0 .item').each(function() {	
 		var $hoverChecker;
-		$(this).hover( function() {
-			console.log("FOCUS!");
+		$(this).click( function() {
+			console.log("CLICK!");
 		});
 	});
 });
