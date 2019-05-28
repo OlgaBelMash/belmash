@@ -39,9 +39,14 @@ $(window).ready(function () {
         'c31.268,0,46.289,22.071,46.289,61.615c0,39.545,0,144.181,0,144.181h84.605c0,0,0-100.344,0-173.915'+
         's-41.689-109.131-99.934-109.131s-82.768,45.369-82.768,45.369V187.333z"/></svg></a>');
 	
-	$("#svg_linkedin path").hover(function() {
-	  $(this).css("fill","#2797CF");
-	});
+	$("#svg_linkedin path").hover(
+		function() {
+	  		$(this).css("fill","#2797CF");
+		},
+		function() {
+	  		$(this).css("fill","#797a7b");
+		}
+	);
 });
 $(document).on('click','#cookieButton', function(){
 	localStorage.setItem('cookieAccepted', 1);
