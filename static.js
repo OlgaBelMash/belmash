@@ -48,7 +48,7 @@ $(window).ready(function () {
 		}
 	);
 	
-	$(".dropdown-catalog-tree").css("min-wifth","350px");
+	$(".dropdown-catalog-tree").css("min-width","350px");
 	
 });
 $(document).on('click','#cookieButton', function(){
