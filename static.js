@@ -47,12 +47,13 @@ $(window).ready(function () {
 	  		$(this).css("fill","#797a7b");
 		}
 	);
+	
 });
 $(document).on('click','#cookieButton', function(){
 	localStorage.setItem('cookieAccepted', 1);
 	$('#cookieNotification').remove();
 });
-
+$(".dropdown-catalog-tree").css("min-wifth","350px");
 $(".tip-caption").css('text-align', 'left').css('min-width', '150px');
 
 $("#yw0 .col-sm-12").each(function() {
