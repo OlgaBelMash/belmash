@@ -47,6 +47,7 @@ $(window).ready(function () {
 	  		$(this).css("fill","#797a7b");
 		}
 	);
+	$(".dropdown-catalog-tree").css("min-width","350px");
 });
 $(document).on('click','#cookieButton', function(){
 	localStorage.setItem('cookieAccepted', 1);
