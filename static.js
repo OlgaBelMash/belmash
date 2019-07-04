@@ -29,7 +29,8 @@ var $partnerSliderChecker = setInterval(
                 dots: false,
                 autoplay: true,
                 autoplaySpeed: 1000,
-                infinite: true
+                infinite: true,
+		rows: 'slider'
             	});
 		clearInterval ($partnerSliderChecker);
 	}
