@@ -28,7 +28,7 @@ var $partnerSliderChecker = setInterval(
                 arrows: false,
                 dots: false,
                 autoplay: true,
-                autoplaySpeed: 1000,
+                autoplaySpeed: 100,
                 infinite: true,
 		slidesToShow: 5
             	});
