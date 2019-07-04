@@ -72,7 +72,7 @@ $(document).on('click','#cookieButton', function(){
 	localStorage.setItem('cookieAccepted', 1);
 	$('#cookieNotification').remove();
 });
-$("#partners .section-title-container).css('text-align', 'center');
+$("#partners .section-title-container").css('text-align', 'center');
 $(".tip-caption").css('text-align', 'left').css('min-width', '150px').css('white-space','nowrap');
 $(".tip-caption").each(function() {
 	$(this).text($(this).text().toUpperCase());
