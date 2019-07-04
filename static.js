@@ -30,7 +30,7 @@ var $partnerSliderChecker = setInterval(
                 autoplay: true,
                 autoplaySpeed: 1000,
                 infinite: true,
-		rows: 'slider'
+		slidesToShow: 5
             	});
 		clearInterval ($partnerSliderChecker);
 	}
