@@ -56,8 +56,7 @@ $(document).on('click','#cookieButton', function(){
 	$('#cookieNotification').remove();
 });
 
-$(".tip-caption").css('text-align', 'left').css('min-width', '150px');
-
+$(".tip-caption").css('text-align', 'left').css('min-width', '150px').css('white-space','nowrap');
 $("#yw0 .col-sm-12").each(function() {
 	$(this).removeClass("col-lg-6");
 	$(this).addClass("col-lg-12");
