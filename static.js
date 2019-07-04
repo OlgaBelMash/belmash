@@ -19,6 +19,22 @@ var $topSliderChecker = setInterval(
 	}
     },
 100);
+var $partnerSliderChecker = setInterval(
+    function(){
+        var $slick_partner = $('.slider-partners');
+        if($slick_partner.hasClass('slick-initialized')){
+            $slick_partner[0].slick.unslick();
+            $slick_partner.slick({
+                arrows: false,
+                dots: false,
+                autoplay: true,
+                autoplaySpeed: 1000,
+                infinite: true
+            	});
+		clearInterval ($partnerSliderChecker);
+	}
+    },
+100);
 $(window).ready(function () {
 	if(!localStorage.getItem('cookieAccepted')){
 		var cookieHTML="<div id='cookieNotification' style='font-size: 13px;background: #002c7e;width: 100%;height: 30px;position: fixed;bottom: 0px;z-index: 9999;color: #fee;padding-left: 15px;'>"+
