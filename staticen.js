@@ -49,8 +49,8 @@ $(window).ready(function () {
 	);
 	$(".dropdown-catalog-tree").css("min-width","350px");
 	
-	$("#descr iframe").each(function(ifr) {
-  		//$("#docs .container").append($(this));
+	$("#watch_video").each(function(div) {
+  		$("#docs .container").append($(this));
 	});
 });
 $(document).on('click','#cookieButton', function(){
