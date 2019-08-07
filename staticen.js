@@ -52,6 +52,7 @@ $(window).ready(function () {
 	$("#watch_video").each(function(div) {
   		$("#docs .container").append($(this));
 	});
+	$(a[href="#docs"]).text("Video");
 });
 $(document).on('click','#cookieButton', function(){
 	localStorage.setItem('cookieAccepted', 1);
