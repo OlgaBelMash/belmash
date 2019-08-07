@@ -50,7 +50,7 @@ $(window).ready(function () {
 	$(".dropdown-catalog-tree").css("min-width","350px");
 	
 	$("#descr iframe").each(function(ifr) {
-  		$("#docs.col-sm-12").append($(this));
+  		$("#docs").append($(this));
 	});
 });
 $(document).on('click','#cookieButton', function(){
