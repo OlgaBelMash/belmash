@@ -48,6 +48,8 @@ $(window).ready(function () {
 		}
 	);
 	$(".dropdown-catalog-tree").css("min-width","350px");
+	$(".catalog-tabs-container .catalog-tabs").css("width","500px");
+	
 	$("#docs .row").remove();
 	$("#watch_video").each(function(div) {
   		$("#docs .container").append($(this));
