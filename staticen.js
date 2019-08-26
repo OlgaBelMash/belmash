@@ -48,7 +48,7 @@ $(window).ready(function () {
 		}
 	);
 	$(".dropdown-catalog-tree").css("min-width","350px");
-	$(".catalog-tabs-container .catalog-tabs").css("width","500px");
+	$(".catalog-tabs-container .container").css("min-width","500px");
 	
 	$("#docs .row").remove();
 	$("#watch_video").each(function(div) {
