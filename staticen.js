@@ -1,4 +1,4 @@
-body.append("<style>.catalog-tabs:after{width:auto !important;}</style>");
+$("body").append("<style>.catalog-tabs:after{width:auto !important;}</style>");
 $("#footer").append("<div style=\"padding-bottom:35px;\" class=\"links flex-center\">All rights reserved BELMASH 2018-2019 ©</div>")
 var $topSliderChecker = setInterval(
     function(){
