@@ -79,8 +79,8 @@ $(window).ready(function () {
 	}
 	$(".facebook_right").stop(true, false).animate({
 			right: "-245"
-		}, 800, 'easeInQuint');
-	}, 1000);
+	}, 800, 'easeInQuint');
+
 	$(".facebook_left").hover(function() {
 		$(".facebook_left").stop(true, false).animate({
 			left: "0"
@@ -88,9 +88,7 @@ $(window).ready(function () {
 	}
 	$(".facebook_left").stop(true, false).animate({
 			left: "-245"
-		}, 800, 'easeInQuint');
-	}, 1000);
-
+	}, 800, 'easeInQuint');
 });
 $(document).on('click','#cookieButton', function(){
 	localStorage.setItem('cookieAccepted', 1);
