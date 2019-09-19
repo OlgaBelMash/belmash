@@ -51,6 +51,23 @@ $(window).ready(function () {
 	$(".dropdown-catalog-tree").css("min-width","350px");
 	//$(".catalog-tabs-container .container").css("min-width","500px");
 	
+	// fb slide
+	var fbHTML='<div class="facebook_left"><div id="facebook_icon"></div><div class="facebook_box"><fb:fan profile_id="1658198971090168" stream="0" connections="16" logobar="0" width="237" height="389"></fb:fan></div></div>';
+	var fbCSS='<style type="text/css">.facebook_left{width:245px;height:389px;position:fixed;left:-245px;top:220px;z-index:99997}.facebook_right{width:245px;height:389px;position:fixed;right:-245px;top:220px;z-index:99997}.facebook_left #facebook_icon{float:right;height:60px;width:34px;right:-34px;background:url(/data/media/images/5d7f8bc05c0f3.png) no-repeat;cursor:pointer;position:relative;z-index:99998}.facebook_right #facebook_icon{float:left;height:60px;width:34px;left:-34px;background:url(fb.png) no-repeat;cursor:pointer;position:relative;z-index:99998}.facebook_right .facebook_box{background-color:#fff;border:4px solid #3b5998;float:right;top:-60px;position:relative;z-index:99999}.facebook_left .facebook_box{background-color:#fff;border:4px solid #3b5998;float:left;top:-60px;position:relative;z-index:99999}</style>';
+	$("body").prepend('<script src="//connect.facebook.net/en_US/all.js#xfbml=1"></script>');
+	$("#footer").append(fbCSS).append(fbHTML);
+	
+	$(".facebook_left").hover(function() {
+		$(".facebook_left").stop(true, false).animate({
+			left: "0"
+		}, 800, 'easeOutQuint');
+	});
+	$(".facebook_left").mouseleave(function() {
+		$(".facebook_left").stop(true, false).animate({
+			left: "-245"
+		}, 800, 'easeInQuint');
+	});
+	
 	$("#docs .row").remove();
 	$("#watch_video").each(function(div) {
   		$("#docs .container").append($(this));
