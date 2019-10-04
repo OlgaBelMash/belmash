@@ -103,6 +103,7 @@ $("#yw0 .col-sm-12").each(function() {
 
 var element = $("#yw0 .items .tree-card:last-child").detach();
 $('#yw0 .items').prepend(element);
+element.css('width', '100%');
 
 var $delay=1000;
 var $hoverChecker;
