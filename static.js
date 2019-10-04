@@ -101,6 +101,9 @@ $("#yw0 .col-sm-12").each(function() {
 	$(this).prepend("<span style='color:#1a498c;' class='glyphicon glyphicon-question-sign'></span>");
 });
 
+var element = $("#yw0 .items .tree-card:last-child").detach();
+$('#yw0 .items').prepend(element);
+
 var $delay=1000;
 var $hoverChecker;
 $(document).on('mouseenter','#yw0 .item', function(){
