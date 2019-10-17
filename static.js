@@ -98,8 +98,6 @@ $(window).ready(function () {
 			left: "-245"
 		}, 800, 'easeInQuint');
 	});
-	
-	$(".dropdown-parent a[href$='/uslugi/'] +ul").html('<li><a class="active" href="/uslugi/obrabotka-listovogo-material/">ЛАЗЕРНАЯ РЕЗКА</a></li><li><a href="/uslugi/tokarnaya-obrabotka-detaley/">ТОКАРНАЯ ОБРАБОТКА</a></li><li><a href="/uslugi/frezernaya-obrabotka-detaley/">ФРЕЗЕРОВАНИЕ</a></li><li><a href="/uslugi/slesarnye-raboty/">СЛЕСАРНЫЕ РАБОТЫ</a></li>');
 });
 $(document).on('click','#cookieButton', function(){
 	localStorage.setItem('cookieAccepted', 1);
@@ -141,3 +139,4 @@ $(document).on('click','#yw0 .item', function(){
 	}
 });
 
+$(".dropdown-parent a[href$='/uslugi/'] +ul").html('<li><a class="active" href="/uslugi/obrabotka-listovogo-material/">ЛАЗЕРНАЯ РЕЗКА</a></li><li><a href="/uslugi/tokarnaya-obrabotka-detaley/">ТОКАРНАЯ ОБРАБОТКА</a></li><li><a href="/uslugi/frezernaya-obrabotka-detaley/">ФРЕЗЕРОВАНИЕ</a></li><li><a href="/uslugi/slesarnye-raboty/">СЛЕСАРНЫЕ РАБОТЫ</a></li><li><a href="/uslugi/svarka-metallokonstrukciy/">СВАРКА МЕТАЛЛА</a></li><li><a href="/uslugi/lite-detaley-iz-razlichnyh-tipov-plastmass/">ЛИТЬЕ ПЛАСТМАСС</a></li><li><a href="/uslugi/printer-shirokoformatnoy-pechati/">ШИРОКОФОРМАТНАЯ ПЕЧАТЬ</a></li>');
