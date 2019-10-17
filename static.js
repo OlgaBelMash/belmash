@@ -99,7 +99,7 @@ $(window).ready(function () {
 		}, 800, 'easeInQuint');
 	});
 	
-	$(".dropdown-parent a[href$="/uslugi/"] +ul").html('<li><a class="active" href="/uslugi/obrabotka-listovogo-material/">ЛАЗЕРНАЯ РЕЗКА</a></li><li><a href="/uslugi/tokarnaya-obrabotka-detaley/">ТОКАРНАЯ ОБРАБОТКА</a></li><li><a href="/uslugi/frezernaya-obrabotka-detaley/">ФРЕЗЕРОВАНИЕ</a></li><li><a href="/uslugi/slesarnye-raboty/">СЛЕСАРНЫЕ РАБОТЫ</a></li>');
+	$(".dropdown-parent a[href$='/uslugi/'] +ul").html('<li><a class="active" href="/uslugi/obrabotka-listovogo-material/">ЛАЗЕРНАЯ РЕЗКА</a></li><li><a href="/uslugi/tokarnaya-obrabotka-detaley/">ТОКАРНАЯ ОБРАБОТКА</a></li><li><a href="/uslugi/frezernaya-obrabotka-detaley/">ФРЕЗЕРОВАНИЕ</a></li><li><a href="/uslugi/slesarnye-raboty/">СЛЕСАРНЫЕ РАБОТЫ</a></li>');
 });
 $(document).on('click','#cookieButton', function(){
 	localStorage.setItem('cookieAccepted', 1);
