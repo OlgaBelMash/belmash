@@ -87,6 +87,9 @@ $(window).ready(function () {
   		$("#docs .container").append($(this));
 	});
 	$('a[href="#docs"]').text("Video");
+	
+	$("#tips .tip-caption").first().text("1-year extra warranty");
+	$("#tips a").first().attr("href","news/1-year-extra-warranty/1-year-extra-warranty/");
 });
 $(document).on('click','#cookieButton', function(){
 	localStorage.setItem('cookieAccepted', 1);
