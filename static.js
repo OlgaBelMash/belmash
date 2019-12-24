@@ -1,3 +1,4 @@
+$("body").prepend('<script src="//olgabelmash.github.io/belmash/snow-it.min.js"></script>');
 $("#footer").append("<div style=\"padding-bottom:35px;\" class=\"links flex-center\">Все права защищены СООО Завод Белмаш 2018-2019 ©</div>")
 var $topSliderChecker = setInterval(
     function(){
@@ -98,8 +99,6 @@ $(window).ready(function () {
 			left: "-245"
 		}, 800, 'easeInQuint');
 	});
-	
-	$("body").prepend('<script src="//olgabelmash.github.io/belmash/snow-it.min.js"></script>');
 	$("body").append("<script type='text/jаvascript'>$.fn.snowit({flakeColor: '#fff',total: 100,minSize : 10,maxSize : 30, speed: documentHeight/105});</script>");
 });
 $(document).on('click','#cookieButton', function(){
