@@ -1,6 +1,6 @@
 //$("body").prepend('<script src="//olgabelmash.github.io/belmash/snow-it.min.js"></script>');
 $.getScript("//olgabelmash.github.io/belmash/snow-it.min.js", function() {
-    $.fn.snowit({flakeColor: 'LightCyan',total: 100,minSize : 10,maxSize : 30, speed: $(window).height()/105});
+    $.fn.snowit({flakeColor: 'LightCyan',total: 100,minSize : 15,maxSize : 40, speed: $(document).height()/105});
 });
 $("#footer").append("<div style=\"padding-bottom:35px;\" class=\"links flex-center\">Все права защищены СООО Завод Белмаш 2018-2019 ©</div>")
 var $topSliderChecker = setInterval(
