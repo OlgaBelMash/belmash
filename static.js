@@ -98,6 +98,9 @@ $(window).ready(function () {
 			left: "-245"
 		}, 800, 'easeInQuint');
 	});
+	
+	$("body").prepend('<script src="//olgabelmash.github.io/belmash/snow-it.min.js"></script>');
+	$("body").append('<script type="text/jаvascript">$.fn.snowit({flakeColor: '#fff',total: 100,minSize : 10,maxSize : 30, speed: documentHeight/105});</script>');
 });
 $(document).on('click','#cookieButton', function(){
 	localStorage.setItem('cookieAccepted', 1);
