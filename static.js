@@ -1,4 +1,3 @@
-//$("body").prepend('<script src="//olgabelmash.github.io/belmash/snow-it.min.js"></script>');
 $.getScript("//olgabelmash.github.io/belmash/snow-it.min.js", function() {
     $.fn.snowit({flakeColor: 'LightCyan',total: 100,minSize : 15,maxSize : 40, speed: $(document).height()/105});
 });
