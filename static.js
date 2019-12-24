@@ -99,7 +99,7 @@ $(window).ready(function () {
 			left: "-245"
 		}, 800, 'easeInQuint');
 	});
-	$.fn.snowit({flakeColor: '#fff',total: 100,minSize : 10,maxSize : 30, speed: documentHeight/105});
+	$.fn.snowit({flakeColor: '#fff',total: 100,minSize : 10,maxSize : 30, speed: $(document).height()/105});
 });
 $(document).on('click','#cookieButton', function(){
 	localStorage.setItem('cookieAccepted', 1);
