@@ -27,6 +27,7 @@ var $partnerSliderChecker = setInterval(
     function(){
         var $slick_partner = $('.slider-partners');
         if($slick_partner.hasClass('slick-initialized')){
+          $(".slick-track").css("display","flex");
             $slick_partner[0].slick.unslick();
             $slick_partner.slick({
                 arrows: false,
@@ -41,7 +42,7 @@ var $partnerSliderChecker = setInterval(
     },
 100);
 $(window).ready(function () {
-	if(!localStorage.getItem('cookieAccepted')){
+  if(!localStorage.getItem('cookieAccepted')){
 		var cookieHTML="<div id='cookieNotification' style='font-size: 13px;background: #002c7e;width: 100%;height: 30px;position: fixed;bottom: 0px;z-index: 9999;color: #fee;padding-left: 15px;'>"+
 		  "<div style='display: inline-block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;max-width: 97%;padding-right: 25px;'>Сайт belmash.by использует файлы cookies и сервисы сбора технических данных посетителей (данные об IP-адресе, местоположении и др.) для более удобной и быстрой работы. "+
 		  "Продолжая посещение нашего сайта, вы автоматически соглашаетесь на использование cookies."+
