@@ -145,10 +145,7 @@ $(document).on('click','#yw0 .item', function(){
 		$hoverChecker=false;
 	}
 });*/
-$(document).on('click','#yw0 .item', function(event){
-  	console.log(event.detail);
-	if(event.detail || event.detail != 1) return false;
-});
+
 
 
 //$(".dropdown-parent a[href$='/uslugi/']").html('<a href="/uslugi/"><span class="title">УСЛУГИ<i class="fa fa-angle-down" aria-hidden="true"></i></span></a>');
