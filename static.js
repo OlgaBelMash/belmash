@@ -146,7 +146,8 @@ $(document).on('click','#yw0 .item', function(){
 	}
 });*/
 $(document).on('click','#yw0 .item', function(event){
-  if(event.detail || event.detail != 1) return false;
+  	console.log(event.detail);
+	if(event.detail || event.detail != 1) return false;
 });
 
 
