@@ -134,7 +134,7 @@ $(document).on('mouseenter','#yw0 .item', function(){
 		$hoverChecker = setTimeout(function() {
 			clearTimeout($hoverChecker);
 			$hoverChecker=false;
-			$(".side.more").empty();
+			//$(".side.more").empty();
 			$el.click();
 		}, $delay);
 	}
