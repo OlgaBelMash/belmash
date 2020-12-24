@@ -1,7 +1,7 @@
 // snow
-/*$.getScript("//olgabelmash.github.io/belmash/snow-it.min.js", function() {
+$.getScript("//olgabelmash.github.io/belmash/snow-it.min.js", function() {
     $.fn.snowit({flakeColor: 'LightCyan',total: 100,minSize : 15,maxSize : 40, speed: $(document).height()/105});
-});*/
+});
 $("body").append("<style>.catalog-tabs:after{width:auto !important;}</style>");
 $("#footer").append("<div style=\"padding-bottom:35px;\" class=\"links flex-center\">All rights reserved BELMASH 2018-2020 ©</div>")
 var $topSliderChecker = setInterval(
