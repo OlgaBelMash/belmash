@@ -2,7 +2,7 @@
 $.getScript("//olgabelmash.github.io/belmash/snow-it.min.js", function() {
     $.fn.snowit({flakeColor: 'LightCyan',total: 100,minSize : 15,maxSize : 40, speed: $(document).height()/105});
 });
-$("#footer").append("<div style=\"padding-bottom:35px;\" class=\"links flex-center\">Все права защищены СООО Завод Белмаш 2018-2020 ©</div>")
+$("#footer").append("<div style=\"padding-bottom:35px;\" class=\"links flex-center\">Все права защищены СООО Завод Белмаш 2018-2021 ©</div>")
 var $topSliderChecker = setInterval(
     function(){
         var $slick_header_top = $('.slider-header');
