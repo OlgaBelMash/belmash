@@ -106,7 +106,14 @@ $(window).ready(function () {
 	
 	
 	$(".filter.country").on('loaded.bs.select', function (a,b,c,d) {
-		console.log(this);
+		var menu = $(this).find('ul.dropdown-menu');
+		if(menu){
+			var firstEl = $(this).find('ul.dropdown-menu').find('*[data-original-index="1"]');
+			var elKirgiz = $(this).find('ul.dropdown-menu').find('*[data-original-index="15"]');
+			var elKazah = $(this).find('ul.dropdown-menu').find('*[data-original-index="16"]');
+			elKirgiz.insertBefore(firstEl);
+			elKazah.insertAfter(elKirgiz);
+		}
 	});
 	
 	
