@@ -104,6 +104,13 @@ $(window).ready(function () {
 		}, 800, 'easeInQuint');
 	});
 	
+	
+	$(".filter .country").on('loaded.bs.select', function (a,b,c,d) {
+		console.log(this);
+	});
+	
+	
+	
 });
 $(document).on('click','#cookieButton', function(){
 	localStorage.setItem('cookieAccepted', 1);
