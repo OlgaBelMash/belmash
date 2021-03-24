@@ -105,7 +105,7 @@ $(window).ready(function () {
 	});
 	
 	
-	$(".filter .country").on('loaded.bs.select', function (a,b,c,d) {
+	$(".filter.country").on('loaded.bs.select', function (a,b,c,d) {
 		console.log(this);
 	});
 	
