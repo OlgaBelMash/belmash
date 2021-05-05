@@ -166,7 +166,7 @@ $(document).on('click','#yw0 .item', function(){
 $(".dropdown-parent a[href$='/uslugi/']>span.title").append("<i class='fa fa-angle-down' aria-hidden='true'></i>");
 $(".dropdown-parent a[href$='/uslugi/'] +ul").html('<li><a class="active" href="/uslugi/obrabotka-listovogo-material/">ЛАЗЕРНАЯ РЕЗКА</a></li><li><a href="/uslugi/tokarnaya-obrabotka-detaley/">ТОКАРНАЯ ОБРАБОТКА</a></li><li><a href="/uslugi/frezernaya-obrabotka-detaley/">ФРЕЗЕРОВАНИЕ</a></li><li><a href="/uslugi/slesarnye-raboty/">СЛЕСАРНЫЕ РАБОТЫ</a></li><li><a href="/uslugi/svarka-metallokonstrukciy/">СВАРКА МЕТАЛЛА</a></li><li><a href="/uslugi/lite-detaley-iz-razlichnyh-tipov-plastmass/">ЛИТЬЕ ПЛАСТМАСС</a></li><li><a href="/uslugi/printer-shirokoformatnoy-pechati/">ШИРОКОФОРМАТНАЯ ПЕЧАТЬ</a></li>');
 
-$('a[href="/produkciya/belmash-camping"] img').attr('src','/data/media/images/6092647b235c2.png');
+$('a[href="/produkciya/belmash-camping"] img').attr('src','/data/media/images/60926baa54c10.png');
 
 if($(location).attr('href')=="https://belmash.by/"){
 	$(".dropdown-parent>a>span.active").removeClass("active");
