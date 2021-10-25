@@ -179,4 +179,4 @@ $(".footer-menu a").each(function() {
 	if($(this).attr('href')=="/produkciya/elekstroinstrument"){
 		$(this).text("ЭЛЕКТРО-ИНСТРУМЕНТ");
 	}
-}
+});
