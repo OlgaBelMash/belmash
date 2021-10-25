@@ -175,3 +175,8 @@ if($(location).attr('href')=="https://belmash.by/"){
 if($(location).attr('href')=="https://belmash.by/gde-kupit-produkciyu/"){
 	$(".dropdown-parent a[href$='/o-kompanii/']>span.active").removeClass("active");
 }
+$(".footer-menu a").each(function() {
+	if($(this).attr('href')=="/produkciya/elekstroinstrument"){
+		$(this).text("ЭЛЕКТРО-ИНСТРУМЕНТ");
+	}
+}
